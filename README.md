@@ -1,188 +1,214 @@
-# CapitalEdge – AI-Powered Cloud-Native Banking Management System
+CapitalEdge – AI-Powered Cloud-Native Banking Management System with Intelligent Credit Scoring, Conversational Banking, DevOps & MLOps
+Team Members
+S. No.	University ID	Name
+1	2420090099	Yalamanchili Nihitha
+2	2420090117	Alluri Sri Anitha
+3	2420030523	Somarowthu Harini
+4	2420030434	Tammana Kameshwari Amulya
 
-## About the Project
+Supervisor
+Ms. G Lavanya
 
-**CapitalEdge** is an AI-powered, cloud-native banking management system designed to provide secure, intelligent, and personalized banking services.
+Abstract
 
-The system combines traditional banking management with **AI-based credit scoring** and **conversational banking**. It demonstrates modern software engineering practices including **Agile development, DevOps, DevSecOps, cloud-native deployment, and MLOps**.
+CapitalEdge – AI-Powered Cloud-Native Banking Management System with Intelligent Credit Scoring, Conversational Banking, DevOps & MLOps is a modern banking management platform designed to provide secure, intelligent, and scalable banking services by integrating traditional banking operations with Artificial Intelligence, Cloud Computing, DevOps, and MLOps practices.
 
-> **Note:** This is an **Adaptive Software Engineering (ASE) Course Project**, not a Capstone Project.
+Traditional banking management systems primarily focus on account management, transactions, and administrative operations, while modern banking requires intelligent decision-making, personalized customer assistance, scalable infrastructure, and continuous software improvement. CapitalEdge addresses these requirements by combining core banking functionalities with AI-powered credit assessment and conversational banking.
 
-## Objectives
+The system supports multiple banking roles, including Customer, Bank Teller, Bank Manager, and System Administrator, with role-based access to ensure secure and controlled operations. Customers can manage their accounts, perform banking activities, and interact with the conversational banking assistant. Bank tellers can handle customer transactions and service requests, while bank managers can monitor banking operations and manage relevant activities. System administrators are responsible for system-level management and security.
 
-* Develop a modern cloud-native banking management system.
-* Implement AI-based credit scoring for intelligent financial decision support.
-* Provide conversational banking assistance using AI.
-* Apply Agile and Scrum practices during development.
-* Implement CI/CD and containerized deployment.
-* Integrate security into the development lifecycle.
-* Apply MLOps practices for managing machine learning models.
-* Monitor application and infrastructure performance.
+The platform incorporates an AI-based credit scoring system that analyzes relevant customer financial information to estimate creditworthiness and assist in making informed lending decisions. A conversational banking assistant enables users to interact with the system using natural language and obtain assistance with banking-related queries.
 
-## Proposed Features
+The project follows Agile Software Engineering principles, with requirements organized into user stories and a prioritized product backlog. Scrum practices can be used for sprint planning, incremental development, testing, and continuous feedback. Git and GitHub are used for version control and collaborative development.
 
-### Banking Management
+DevOps practices are incorporated to automate the software development and deployment lifecycle using tools such as Git, GitHub, Docker, and GitHub Actions. Cloud infrastructure can be provided through AWS services to support scalable and reliable deployment.
 
-* Customer management
-* Account management
-* Transaction management
-* Secure banking operations
+DevSecOps practices can be incorporated to improve application security through secure authentication, authorization, vulnerability scanning, static code analysis, and security testing.
 
-### AI-Powered Services
+The MLOps pipeline manages the complete lifecycle of the credit-scoring machine learning model, including data preparation, model training, experiment tracking, model versioning, deployment, and monitoring. MLflow can be used for experiment tracking and model lifecycle management, while monitoring tools can be used to observe application and model performance.
 
-* Intelligent credit scoring
-* Conversational banking assistant
-* Personalized financial assistance
+Overall, CapitalEdge integrates Banking Management, Artificial Intelligence, Cloud Computing, Agile Software Engineering, DevOps, DevSecOps, and MLOps into a single intelligent and scalable banking platform.
 
-### DevOps & Cloud-Native
+Main Purpose
 
-* Git-based version control
-* CI/CD automation
-* Docker containerization
-* Kubernetes orchestration
-* Cloud deployment
+The main purpose of CapitalEdge is to develop a secure, intelligent, and cloud-native banking management system that combines conventional banking operations with AI-based decision-making and modern software engineering practices.
 
-### DevSecOps
+The project aims to:
 
-* Static code analysis using SonarQube
-* Vulnerability scanning using Trivy
-* OWASP-based security practices
-* Secure coding practices
+Digitize and manage core banking operations.
+Provide role-based banking services for customers, tellers, managers, and administrators.
+Use AI-based credit scoring to support intelligent lending decisions.
+Provide conversational banking for natural-language customer assistance.
+Use cloud infrastructure for scalability and availability.
+Apply DevOps for automated development and deployment.
+Apply DevSecOps for secure software development.
+Apply MLOps for managing and monitoring the credit-scoring model.
+Technologies Used
+Frontend
+React.js
+HTML5
+CSS3
+JavaScript / TypeScript
+Tailwind CSS (if used)
+Backend
+Java 21
+Spring Boot
+Spring Security
+REST APIs
+JWT Authentication
+Database
+MySQL / PostgreSQL
+Artificial Intelligence / Machine Learning
+Python
+Scikit-learn
+Pandas
+NumPy
+FastAPI
+Machine Learning-based Credit Scoring
+DevOps & Cloud
+Git
+GitHub
+Docker
+GitHub Actions
+AWS EC2
+AWS S3
+DevSecOps
+Spring Security
+JWT
+BCrypt
+Role-Based Access Control
+SonarQube
+Trivy
+OWASP ZAP
+MLOps & Monitoring
+MLflow
+Prometheus
+Grafana
+Key Features
+1. Role-Based Banking Management
 
-### MLOps
+The system provides different functionalities for:
 
-* Data preparation and model training
-* Dataset and model versioning
-* Model tracking and management
-* Model deployment
-* Model monitoring
+Customer – account management, transactions, banking services, and AI assistance.
+Bank Teller – customer service and transaction processing.
+Bank Manager – monitoring and management of banking operations.
+System Administrator – system, user, and security management.
+2. Intelligent Credit Scoring
 
-## Technology Stack
+The ML model analyzes relevant financial attributes to estimate a customer's creditworthiness and assist banking personnel in making more informed credit decisions.
 
-| Category          | Technologies         |
-| ----------------- | -------------------- |
-| Frontend          | React.js, TypeScript |
-| Backend           | Java, Spring Boot    |
-| Database          | PostgreSQL           |
-| AI/ML             | Python, Scikit-learn |
-| Conversational AI | Gemini / OpenAI API  |
-| Version Control   | Git, GitHub          |
-| Containerization  | Docker               |
-| Orchestration     | Kubernetes, Minikube |
-| CI/CD             | GitHub Actions       |
-| Code Quality      | SonarQube            |
-| Security          | Trivy, OWASP ZAP     |
-| MLOps             | MLflow, DVC          |
-| Monitoring        | Prometheus, Grafana  |
-| Cloud             | AWS                  |
+3. Conversational Banking
 
-## System Architecture
+An AI-powered conversational interface allows customers to ask banking-related questions and receive natural-language responses.
 
+4. Secure Authentication
 
-                    ┌──────────────────┐
-                    │      User        │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │ Frontend         │
-                    │ React + TS       │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │ Backend          │
-                    │ Spring Boot      │
-                    └──────┬─────┬─────┘
-                           │     │
-                 ┌─────────┘     └──────────┐
-                 ▼                          ▼
-        ┌────────────────┐        ┌────────────────┐
-        │   PostgreSQL   │        │  AI/ML Services│
-        │    Database    │        │ Credit Scoring │
-        └────────────────┘        │ Conversational │
-                                  │     Banking     │
-                                  └────────────────┘
+The system uses authentication and authorization mechanisms such as JWT, Spring Security, BCrypt, and role-based access control to protect user accounts and banking operations.
 
-        DevOps → Git → CI/CD → Docker → Kubernetes
-        DevSecOps → SonarQube → Trivy → OWASP ZAP
-        MLOps → DVC → MLflow → Model Monitoring
-        Observability → Prometheus → Grafana
+5. Cloud-Native Architecture
 
+The application is designed to be deployed on cloud infrastructure, allowing it to scale according to application requirements.
 
-## Development Methodology
+6. DevOps Pipeline
 
-The project follows the **Agile Scrum methodology**.
+GitHub Actions and Docker can automate:
 
-Development is divided into iterative cycles where requirements are maintained in a product backlog, features are prioritized, implemented, tested, and reviewed continuously.
+Code → Build → Test → Security Checks → Docker Build → Deployment
 
-## MLOps Workflow
+7. MLOps Pipeline
 
+The credit-scoring model follows an ML lifecycle:
 
-Data Collection
-      ↓
-Data Preparation
-      ↓
-Model Training
-      ↓
-Model Evaluation
-      ↓
-Versioning & Tracking
-      ↓
-Model Deployment
-      ↓
-Monitoring
-      ↓
-Continuous Improvement
+Data → Training → Evaluation → Experiment Tracking → Model Versioning → Deployment → Monitoring → Retraining
 
+Project Architecture
 
-## DevOps & DevSecOps Workflow
+The overall system can be divided into the following layers:
 
+Frontend Layer
+React-based user interface for customers, tellers, managers, and administrators.
 
-Developer
-    ↓
-Git / GitHub
-    ↓
-CI/CD Pipeline
-    ↓
-Code Quality & Security Checks
-    ↓
-Docker Build
-    ↓
-Kubernetes Deployment
-    ↓
-Monitoring
+↓
 
+Backend Layer
+Spring Boot REST APIs handling authentication, accounts, transactions, banking operations, and business logic.
 
-## Project Structure
+↓
 
+Database Layer
+Stores customer information, accounts, transactions, loan information, and other banking data.
 
-CapitalEdge/
-│
-├── frontend/
-├── backend/
-├── ml-service/
-├── database/
-├── docker/
-├── kubernetes/
-├── mlops/
-├── monitoring/
-├── tests/
-├── docs/
-└── README.md
+↓
 
+AI/ML Layer
+Credit-scoring model and conversational banking capabilities.
 
-## Expected Outcome
+↓
 
-CapitalEdge aims to demonstrate how **AI, cloud-native technologies, DevOps, DevSecOps, and MLOps** can be integrated into a single banking application to achieve improved automation, scalability, security, reliability, and intelligent decision support.
+DevOps & Cloud Layer
+Docker, GitHub Actions, AWS infrastructure, deployment, and monitoring.
 
-## Course
+↓
 
-**Adaptive Software Engineering (ASE)**
-**Project Type:** ASE Course Project
+MLOps Layer
+MLflow-based model tracking, versioning, deployment, and monitoring.
 
-## Team
+Setup Instructions
+Prerequisites
 
-**Project:** CapitalEdge
-**Domain:** AI + Cloud-Native Banking
-**Academic Year:** 2026–2027
+Make sure the following software is installed:
+
+Java 21
+Node.js and npm
+Python 3.x
+MySQL / PostgreSQL
+Git
+Docker
+AWS Account (for cloud deployment, if applicable)
+Clone the Repository
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd CapitalEdge
+Backend Setup
+cd backend
+
+Configure the database connection and required environment variables.
+
+Then run:
+
+./mvnw spring-boot:run
+
+For Windows:
+
+mvnw.cmd spring-boot:run
+Frontend Setup
+cd frontend
+npm install
+npm start
+AI/ML Setup
+cd ml-service
+pip install -r requirements.txt
+
+Start the FastAPI service:
+
+uvicorn main:app --reload
+Project Workflow
+
+User Registration/Login
+↓
+Role-Based Authentication
+↓
+Banking Operations
+↓
+Transaction & Account Management
+↓
+AI Credit Scoring / Conversational Banking
+↓
+Database Storage
+↓
+Monitoring & Analytics
+
+The complete application is supported by DevOps, DevSecOps, Cloud, and MLOps pipelines for secure and continuous development, deployment, and improvement.
+
+One-line project definition for your presentation
+
+CapitalEdge is an AI-powered cloud-native banking management system that combines secure banking operations, intelligent credit scoring, conversational banking, DevOps, DevSecOps, and MLOps to deliver a scalable and intelligent banking platform.
